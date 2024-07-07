@@ -17,13 +17,19 @@ export default function Home() {
 
   return (
     <main>
-      <h1>都道府県</h1>
-      <CheckBoxPrefectures prefectures={prefectures} onChange={handleCheckBoxPrefectures} />
+      <section>
+        <h1>都道府県</h1>
+        <CheckBoxPrefectures prefectures={prefectures} onChange={handleCheckBoxPrefectures} />
+      </section>
 
-      <h1>推移タイプ</h1>
-      <CheckBoxPrefPopulation labels={labels} onChange={setLabel} />
+      <section>
+        <h1>推移タイプ</h1>
+        <CheckBoxPrefPopulation labels={labels} onChange={setLabel} />
+      </section>
 
-      <Graph labels={labels} labelIndex={labelIndex} prefPopulationDatas={prefPopulation} />
+      <section>
+        <Graph labels={labels} labelIndex={labelIndex} prefPopulationDatas={prefPopulation} />
+      </section>
     </main>
   );
 }
