@@ -38,13 +38,13 @@
 
 .checkBox input[type="checkbox"]:hover + label,
 .checkBox input[type="radio"]:hover + label {
-  background: #17517268;
+  background: var(--hover-background-color);
   border: 1px solid var(--color);
 }
 
 .checkBox input[type="checkbox"]:checked + label,
 .checkBox input[type="radio"]:checked + label {
-  background: #175172;
+  background: var(--checked-background-color);
   border: 1px solid var(--color);
 }
 

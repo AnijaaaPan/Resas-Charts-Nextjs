@@ -1,6 +1,9 @@
 :root { 
   --color: #F6F7F8;
   --background-color: #282b30;
+  --heading-background-color: #b4a983;
+  --hover-background-color: #17517268;
+  --checked-background-color: #175172;
 }
 
 html {
@@ -27,7 +30,7 @@ main {
 
 h1 {
   font-size: 2.5rem;
-  background-image: repeating-linear-gradient(90deg, #b4a983 0, #b4a983 2px, rgba(0, 0, 0, 0) 2px, rgba(0, 0, 0, 0) 4px);
+  background-image: repeating-linear-gradient(90deg, var(--heading-background-color) 0, var(--heading-background-color) 2px, rgba(0, 0, 0, 0) 2px, rgba(0, 0, 0, 0) 4px);
   background-size: 4px 4px;
   background-repeat: repeat-x;
   background-position: center bottom;
