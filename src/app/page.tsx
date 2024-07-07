@@ -13,14 +13,13 @@ export default function Home() {
   const labels = ['総人口', '年少人口', '生産年齢人口', '老年人口'];
   const [labelIndex, setLabel] = useState<number>(0);
 
-  console.log(process.env.NEXT_PUBLIC_RESAS_API_KEY);
   useEffect(() => {
     axios
       .get('https://opendata.resas-portal.go.jp/api/v1/prefectures', {
         headers: { 'X-API-KEY': process.env.NEXT_PUBLIC_RESAS_API_KEY },
       })
       .then((results) => setPrefectures(results.data.result))
-      .catch(console.error);
+      .catch(() => {});
   }, []);
 
   const HandleCheckBoxLabel = async (index: number) => {
@@ -43,7 +42,7 @@ export default function Home() {
         .then((results) => {
           setPrefPopulation([...prefPopulation, { prefName, data: results.data.result.data }]);
         })
-        .catch(console.error);
+        .catch(() => {});
     } else {
       setPrefPopulation(prefPopulation.filter((pop) => pop.prefName !== prefName));
     }
