@@ -1,0 +1,44 @@
+.prefecturesCheckBoxs {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(90px, 0.5fr));
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.checkBox input[type=checkbox] { 
+  display: none;
+}
+
+.checkBox input[type=radio] { 
+  display: none;
+}
+
+.checkBox label {
+  float: left;
+  margin: 5px;
+  width: 80%;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+  color: var(--color);
+  border: 1px dotted var(--color);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e2124;
+}
+
+.checkBox input[type="checkbox"]:hover + label {
+  background: #17517268;
+  border: 1px solid var(--color);
+}
+
+.checkBox input[type="checkbox"]:checked + label {
+  background: #175172;
+  border: 1px solid var(--color);
+}

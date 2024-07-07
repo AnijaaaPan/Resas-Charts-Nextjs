@@ -1,25 +1,32 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+:root { 
+  --color: #F6F7F8;
+  --background-color: #282b30;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  color: var(--color);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
-    rgb(var(--background-start-rgb));
+  background: var(--background-color);
+}
+
+main {
+  padding: 0 12.55%;
+}
+
+h2 {
+	font-size: 3.25rem;
+	background-image: repeating-linear-gradient(90deg, #b4a983 0, #b4a983 2px, rgba(0,0,0,0) 2px, rgba(0,0,0,0) 4px);
+	background-size: 4px 4px;
+	background-repeat: repeat-x;
+	background-position: center bottom;
+  padding-top: 10%;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 @layer utilities {
