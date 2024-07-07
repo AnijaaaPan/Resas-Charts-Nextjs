@@ -8,6 +8,11 @@ html {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   color: var(--color);
+  
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 body {
@@ -16,15 +21,16 @@ body {
 
 main {
   padding: 0 12.55%;
+  padding-bottom: 40px;
 }
 
 h2 {
-	font-size: 3.25rem;
-	background-image: repeating-linear-gradient(90deg, #b4a983 0, #b4a983 2px, rgba(0,0,0,0) 2px, rgba(0,0,0,0) 4px);
-	background-size: 4px 4px;
-	background-repeat: repeat-x;
-	background-position: center bottom;
-  padding-top: 10%;
+  font-size: 2.5rem;
+  background-image: repeating-linear-gradient(90deg, #b4a983 0, #b4a983 2px, rgba(0, 0, 0, 0) 2px, rgba(0, 0, 0, 0) 4px);
+  background-size: 4px 4px;
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  padding-top: 40px;
   margin-top: 0;
   margin-bottom: 20px;
 }
