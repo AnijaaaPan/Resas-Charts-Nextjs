@@ -13,6 +13,7 @@ export default function Home() {
   const labels = ['総人口', '年少人口', '生産年齢人口', '老年人口'];
   const [labelIndex, setLabel] = useState<number>(0);
 
+  console.log(process.env.NEXT_PUBLIC_RESAS_API_KEY);
   useEffect(() => {
     axios
       .get('https://opendata.resas-portal.go.jp/api/v1/prefectures', {
