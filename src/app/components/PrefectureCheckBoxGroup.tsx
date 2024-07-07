@@ -3,7 +3,7 @@
 import styles from '@/css/CheckBox.module.css';
 import { CheckBoxPrefecturesProps } from '@/interfaces/IProps';
 
-export const CheckBoxPrefectures: React.FC<CheckBoxPrefecturesProps> = ({
+export const PrefectureCheckBoxGroup: React.FC<CheckBoxPrefecturesProps> = ({
   onChange,
   prefectures,
 }) => (

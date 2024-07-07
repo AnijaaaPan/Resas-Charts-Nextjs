@@ -2,13 +2,13 @@
 
 import { useState } from 'react';
 
-import { CheckBoxPrefectures } from '@/app/components/CheckBoxPrefectures';
-import { CheckBoxPrefPopulation } from '@/app/components/CheckBoxPrefPopulation';
-import Graph from '@/app/components/Graph';
+import PopulationGraph from '@/app/components/PopulationGraph';
+import { PopulationTypeRadioGroup } from '@/app/components/PopulationTypeRadioGroup';
+import { PrefectureCheckBoxGroup } from '@/app/components/PrefectureCheckBoxGroup';
 import { useFetchPrefectures } from '@/app/hooks/useFetchPrefectures';
 import { useFetchPrefPopulation } from '@/app/hooks/useFetchPrefPopulation';
 
-const labels = ['総人口', '年少人口', '生産年齢人口', '老年人口'];
+const populationLabels = ['総人口', '年少人口', '生産年齢人口', '老年人口'];
 
 export default function Home() {
   const prefectures = useFetchPrefectures();
@@ -19,16 +19,21 @@ export default function Home() {
     <main>
       <section>
         <h1>都道府県</h1>
-        <CheckBoxPrefectures prefectures={prefectures} onChange={handleCheckBoxPrefectures} />
+        <PrefectureCheckBoxGroup prefectures={prefectures} onChange={handleCheckBoxPrefectures} />
       </section>
 
       <section>
         <h1>推移タイプ</h1>
-        <CheckBoxPrefPopulation labels={labels} onChange={setLabel} />
+        <PopulationTypeRadioGroup labels={populationLabels} onChange={setLabel} />
       </section>
 
       <section>
-        <Graph labels={labels} labelIndex={labelIndex} prefPopulationDatas={prefPopulation} />
+        <h1>グラフ</h1>
+        <PopulationGraph
+          labels={populationLabels}
+          labelIndex={labelIndex}
+          prefPopulationDatas={prefPopulation}
+        />
       </section>
     </main>
   );

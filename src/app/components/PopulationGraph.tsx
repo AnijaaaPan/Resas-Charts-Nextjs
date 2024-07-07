@@ -7,7 +7,7 @@ import React, { useRef } from 'react';
 import styles from '@/css/Graph.module.css';
 import { GraphProps } from '@/interfaces/IProps';
 
-const Graph: React.FC<GraphProps> = ({ labelIndex, labels, prefPopulationDatas }) => {
+const PopulationGraph: React.FC<GraphProps> = ({ labelIndex, labels, prefPopulationDatas }) => {
   const series: Highcharts.SeriesOptionsType[] = prefPopulationDatas.map((p) => ({
     data: p.data[labelIndex].data.map((pd) => pd.value),
     name: p.prefName,
@@ -53,4 +53,4 @@ const Graph: React.FC<GraphProps> = ({ labelIndex, labels, prefPopulationDatas }
   );
 };
 
-export default Graph;
+export default PopulationGraph;
