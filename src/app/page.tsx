@@ -51,13 +51,17 @@ export default function Home() {
   return (
     <main>
       <h2>都道府県</h2>
-      <CheckBoxPrefectures prefectures={prefectures} onChange={HandleCheckBoxPrefectures} />
+      {prefectures && (
+        <CheckBoxPrefectures prefectures={prefectures} onChange={HandleCheckBoxPrefectures} />
+      )}
 
       <h2>推移タイプ</h2>
       <CheckBoxPrefPopulation labels={labels} onChange={HandleCheckBoxLabel} />
 
       <h2>グラフ: {labels[labelIndex]}推移</h2>
-      <Graph labels={labels} labelIndex={labelIndex} prefPopulationDatas={prefPopulation} />
+      {prefPopulation && (
+        <Graph labels={labels} labelIndex={labelIndex} prefPopulationDatas={prefPopulation} />
+      )}
     </main>
   );
 }
