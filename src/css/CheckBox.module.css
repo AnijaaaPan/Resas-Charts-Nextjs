@@ -1,7 +1,7 @@
 .checkBoxs {
-	display: -ms-grid;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(90px, 0.5fr));
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 0.5fr));
 }
 
 .checkBoxs.labels {
@@ -10,8 +10,8 @@
   justify-content: space-between;
 }
 
-.checkBox input[type=checkbox],
-.checkBox input[type=radio] { 
+.checkBox input[type='checkbox'],
+.checkBox input[type='radio'] {
   display: none;
 }
 
@@ -37,14 +37,14 @@
   width: 75%;
 }
 
-.checkBox input[type="checkbox"]:hover + label,
-.checkBox input[type="radio"]:hover + label {
+.checkBox input[type='checkbox']:hover + label,
+.checkBox input[type='radio']:hover + label {
   background: var(--hover-background-color);
   border: 1px solid var(--color);
 }
 
-.checkBox input[type="checkbox"]:checked + label,
-.checkBox input[type="radio"]:checked + label {
+.checkBox input[type='checkbox']:checked + label,
+.checkBox input[type='radio']:checked + label {
   background: var(--checked-background-color);
   border: 1px solid var(--color);
 }
@@ -53,7 +53,7 @@
   .checkBoxs.labels {
     flex-wrap: wrap;
   }
-  
+
   .checkBoxs.labels .checkBox {
     width: 50%;
   }

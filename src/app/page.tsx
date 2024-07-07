@@ -20,7 +20,7 @@ export default function Home() {
         headers: { 'X-API-KEY': process.env.NEXT_PUBLIC_RESAS_API_KEY },
       })
       .then((results) => setPrefectures(results.data.result))
-      .catch(() => {});
+      .catch(console.error);
   }, []);
 
   const HandleCheckBoxLabel = async (index: number) => {
@@ -43,7 +43,7 @@ export default function Home() {
         .then((results) => {
           setPrefPopulation([...prefPopulation, { prefName, data: results.data.result.data }]);
         })
-        .catch(() => {});
+        .catch(console.error);
     } else {
       setPrefPopulation(prefPopulation.filter((pop) => pop.prefName !== prefName));
     }

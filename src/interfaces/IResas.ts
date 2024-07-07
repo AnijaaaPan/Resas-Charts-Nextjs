@@ -1,20 +1,20 @@
-export type PrefecturesData = {
-  prefCode: number
-  prefName: string
+export interface PrefecturesData {
+  prefCode: number;
+  prefName: string;
 }
 
-export type PrefPopulationData = {
-  data: PopulationData[]
-  prefName: string
+export interface PrefPopulationData {
+  data: PopulationData[];
+  prefName: string;
 }
 
-export type PopulationData = {
-  data: PopulationDataDetail[]
-  label: string
+export interface PopulationData {
+  data: PopulationDataDetail[];
+  label: string;
 }
 
-export type PopulationDataDetail = {
-  rate?: number
-  value: number
-  year: number
+export interface PopulationDataDetail {
+  rate?: number;
+  value: number;
+  year: number;
 }
