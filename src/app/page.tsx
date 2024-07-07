@@ -1,9 +1,10 @@
 'use client';
 
-import Graph from '@/app/components/Graph';
-import { PrefecturesData, PrefPopulationData } from '@/interfaces/IResas';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+
+import Graph from '@/app/components/Graph';
+import { PrefecturesData, PrefPopulationData } from '@/interfaces/IResas';
 import { CheckBoxPrefectures } from './components/CheckBoxPrefectures';
 import { CheckBoxPrefPopulation } from './components/CheckBoxPrefPopulation';
 

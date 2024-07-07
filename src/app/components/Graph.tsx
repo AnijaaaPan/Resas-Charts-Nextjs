@@ -1,10 +1,11 @@
 'use client';
 
-import styles from '@/css/Graph.module.css';
-import { GraphProps } from '@/interfaces/IProps';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import React, { useRef } from 'react';
+
+import styles from '@/css/Graph.module.css';
+import { GraphProps } from '@/interfaces/IProps';
 
 const Graph: React.FC<GraphProps> = ({ labelIndex, labels, prefPopulationDatas }) => {
   const series: Highcharts.SeriesOptionsType[] = prefPopulationDatas.map((p) => ({
