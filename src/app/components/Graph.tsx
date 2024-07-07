@@ -1,5 +1,6 @@
 'use client';
 
+import styles from '@/css/Graph.module.css';
 import { GraphProps } from '@/interfaces/IProps';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
@@ -45,7 +46,7 @@ const Graph: React.FC<GraphProps> = ({ labelIndex, labels, prefPopulationDatas }
   const chartComponentRef = useRef<HighchartsReact.RefObject>(null);
 
   return (
-    <div>
+    <div className={styles.graph}>
       <HighchartsReact highcharts={Highcharts} options={options} ref={chartComponentRef} />
     </div>
   );
