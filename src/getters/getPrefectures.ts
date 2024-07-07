@@ -5,7 +5,7 @@ import axios from 'axios';
 import { cache } from 'react';
 
 // 都道府県一覧を取得する
-const getPrefectures = cache(
+const GetPrefectures = cache(
   async (): Promise<PrefecturesData[]> => {
     const data = await axios
       .get('https://opendata.resas-portal.go.jp/api/v1/prefectures', {
@@ -19,4 +19,4 @@ const getPrefectures = cache(
   }
 );
 
-export default getPrefectures;
+export default GetPrefectures;

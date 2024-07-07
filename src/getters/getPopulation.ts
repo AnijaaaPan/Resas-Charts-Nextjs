@@ -4,7 +4,7 @@ import { PopulationData, PrefecturesData } from '@/interfaces/IResas';
 import axios from 'axios';
 import { cache } from 'react';
 
-const getPopulation = cache(
+const GetPopulation = cache(
   async (prefectures: PrefecturesData): Promise<PopulationData[]> => {
     const { prefCode } = prefectures
     const data = await axios
@@ -19,4 +19,4 @@ const getPopulation = cache(
   }
 );
 
-export default getPopulation;
+export default GetPopulation;
