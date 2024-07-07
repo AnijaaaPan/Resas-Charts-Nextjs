@@ -3,6 +3,11 @@ export type PrefecturesData = {
   prefName: string
 }
 
+export type PrefPopulationData = {
+  data: PopulationData[]
+  prefName: string
+}
+
 export type PopulationData = {
   data: PopulationDataDetail[]
   label: string
