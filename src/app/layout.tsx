@@ -5,8 +5,11 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: '都道府県別 推移グラフ',
   description: '都道府県別 推移グラフを動的に生成出来ます',
+  icons: {
+    icon: '/favicon.ico',
+  },
+  title: '都道府県別 推移グラフ',
 };
 
 export default function RootLayout({
