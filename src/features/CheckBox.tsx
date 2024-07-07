@@ -3,11 +3,11 @@
 import styles from '@/css/Button.module.css';
 import { CheckBoxProps } from '@/interfaces/IProps';
 
-export const HandleClickCheck = (prefCode: number, prefName: string, check: boolean) => {
+export const HandleClick = (prefCode: number, prefName: string, check: boolean) => {
   console.log(prefCode, prefName, check);
 };
 
-export const CheckBoxField: React.FC<CheckBoxProps> = ({ prefectures, onChange }) => {
+export const CheckBox: React.FC<CheckBoxProps> = ({ prefectures, onChange }) => {
   return (
     <>
       <div className={styles.prefecturesCheckBoxs}>
