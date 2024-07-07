@@ -47,3 +47,13 @@
   background: #175172;
   border: 1px solid var(--color);
 }
+
+@media screen and (max-width: 600px) {
+  .checkBoxs.labels {
+    flex-wrap: wrap;
+  }
+  
+  .checkBoxs.labels .checkBox {
+    width: 50%;
+  }
+}
