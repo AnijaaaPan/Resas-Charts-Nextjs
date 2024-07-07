@@ -20,7 +20,7 @@ body {
 }
 
 main {
-  padding: 0 12.55%;
+  padding: 0 10%;
   padding-bottom: 40px;
 }
 
@@ -33,10 +33,4 @@ h2 {
   padding-top: 40px;
   margin-top: 0;
   margin-bottom: 20px;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
 }

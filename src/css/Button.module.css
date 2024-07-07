@@ -1,12 +1,15 @@
-.prefecturesCheckBoxs {
+.checkBoxs {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(90px, 0.5fr));
 }
 
-.checkBox input[type=checkbox] { 
-  display: none;
+.checkBoxs.labels {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
+.checkBox input[type=checkbox],
 .checkBox input[type=radio] { 
   display: none;
 }
@@ -14,7 +17,7 @@
 .checkBox label {
   float: left;
   margin: 5px;
-  width: 80%;
+  width: -webkit-fill-available;
   height: 35px;
   line-height: 35px;
   padding-left: 5px;
@@ -29,12 +32,18 @@
   background-color: #1e2124;
 }
 
-.checkBox input[type="checkbox"]:hover + label {
+.checkBoxs.labels .checkBox {
+  width: 75%;
+}
+
+.checkBox input[type="checkbox"]:hover + label,
+.checkBox input[type="radio"]:hover + label {
   background: #17517268;
   border: 1px solid var(--color);
 }
 
-.checkBox input[type="checkbox"]:checked + label {
+.checkBox input[type="checkbox"]:checked + label,
+.checkBox input[type="radio"]:checked + label {
   background: #175172;
   border: 1px solid var(--color);
 }
