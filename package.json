@@ -29,7 +29,7 @@
     "ts-jest": "^29.2.0",
     "typescript": "5.4"
   },
-  "name": "hogehoge-project",
+  "name": "resas-charts-nextjs",
   "private": true,
   "scripts": {
     "build": "next build",
