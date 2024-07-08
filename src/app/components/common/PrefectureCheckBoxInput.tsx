@@ -3,7 +3,11 @@ import React from 'react';
 import styles from '@/styles/CheckBox.module.css';
 import { CheckBoxInputProps } from '@/types/IProps';
 
-const CheckBoxInput: React.FC<CheckBoxInputProps> = ({ onChange, prefCode, prefName }) => (
+const PrefectureCheckBoxInput: React.FC<CheckBoxInputProps> = ({
+  onChange,
+  prefCode,
+  prefName,
+}) => (
   <div className={styles.checkBox} key={prefName}>
     <input
       type="checkbox"
@@ -15,4 +19,4 @@ const CheckBoxInput: React.FC<CheckBoxInputProps> = ({ onChange, prefCode, prefN
   </div>
 );
 
-export default CheckBoxInput;
+export default PrefectureCheckBoxInput;

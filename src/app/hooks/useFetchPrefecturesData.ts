@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 import { PrefecturesData } from '@/types/IResas';
 
-export const useFetchPrefectures = () => {
+export const useFetchPrefecturesData = () => {
   const [prefectures, setPrefectures] = useState<PrefecturesData[]>([]);
 
   useEffect(() => {
