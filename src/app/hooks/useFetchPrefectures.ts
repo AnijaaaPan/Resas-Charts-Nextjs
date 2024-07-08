@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
-import { PrefecturesData } from '@/interfaces/IResas';
+import { PrefecturesData } from '@/app/interfaces/IResas';
 
 export const useFetchPrefectures = () => {
   const [prefectures, setPrefectures] = useState<PrefecturesData[]>([]);
