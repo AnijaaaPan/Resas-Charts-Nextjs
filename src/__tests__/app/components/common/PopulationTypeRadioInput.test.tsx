@@ -1,7 +1,7 @@
 import { fireEvent, render } from '@testing-library/react';
 import React from 'react';
 
-import PopulationTypeRadioInput from '../app/components/common/PopulationTypeRadioInput';
+import PopulationTypeRadioInput from '../../../../app/components/common/PopulationTypeRadioInput';
 
 describe('PopulationTypeRadioInput', () => {
   const mockProps = {

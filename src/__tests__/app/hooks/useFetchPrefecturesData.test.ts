@@ -1,7 +1,7 @@
 import { renderHook, waitFor } from '@testing-library/react';
 import axios from 'axios';
 
-import useFetchPrefecturesData from '../app/hooks/useFetchPrefecturesData';
+import useFetchPrefecturesData from '../../../app/hooks/useFetchPrefecturesData';
 
 jest.mock('axios');
 const mockedAxios = axios as jest.Mocked<typeof axios>;

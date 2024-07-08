@@ -1,7 +1,7 @@
-import { render } from '@testing-library/react'
-import React from 'react'
+import { render } from '@testing-library/react';
+import React from 'react';
 
-import PopulationGraph from '../app/components/graph/PopulationGraph';
+import PopulationGraph from '../../../../app/components/graph/PopulationGraph';
 
 describe('PopulationGraph', () => {
   const mockProps = {

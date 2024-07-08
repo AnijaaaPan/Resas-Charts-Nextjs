@@ -1,7 +1,7 @@
 import { renderHook } from "@testing-library/react";
 import { act } from "react";
 
-import usePageLogic from '../app/hooks/usePageLogic';
+import usePageLogic from '../../../app/hooks/usePageLogic';
 
 describe('usePageLogic', () => {
   it('handles population type change', () => {

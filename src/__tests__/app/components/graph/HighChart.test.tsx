@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import React from 'react';
 
-import HighChart from '../app/components/graph/HighChart';
+import HighChart from '../../../../app/components/graph/HighChart';
 
 describe('HighChart', () => {
   const mockProps = {
