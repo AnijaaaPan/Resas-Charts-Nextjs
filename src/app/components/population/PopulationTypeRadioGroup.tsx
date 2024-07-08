@@ -1,7 +1,7 @@
 'use client';
 
-import { CheckBoxPrefPopulationProps } from '@/app/interfaces/IProps';
 import styles from '@/styles/CheckBox.module.css';
+import { CheckBoxPrefPopulationProps } from '@/types/IProps';
 import RadioInput from '../common/RadioInput';
 
 export const PopulationTypeRadioGroup: React.FC<CheckBoxPrefPopulationProps> = ({

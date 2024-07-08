@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { RadioInputProps } from '@/app/interfaces/IProps';
 import styles from '@/styles/CheckBox.module.css';
+import { RadioInputProps } from '@/types/IProps';
 
 const RadioInput: React.FC<RadioInputProps> = ({
   defaultChecked = false,
