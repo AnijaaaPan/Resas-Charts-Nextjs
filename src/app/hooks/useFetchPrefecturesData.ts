@@ -1,9 +1,9 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
-import { PrefecturesData } from '@/types/IResas';
+import { PrefecturesData } from '../../types/IResas';
 
-export const useFetchPrefecturesData = () => {
+const useFetchPrefecturesData = () => {
   const [prefectures, setPrefectures] = useState<PrefecturesData[]>([]);
 
   useEffect(() => {
@@ -19,3 +19,5 @@ export const useFetchPrefecturesData = () => {
 
   return prefectures;
 };
+
+export default useFetchPrefecturesData;
