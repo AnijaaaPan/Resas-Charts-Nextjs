@@ -17,7 +17,7 @@
     "eslint-config-prettier": "^9.1.0",
     "postcss": "^8",
     "prettier": "^3.3.2",
-    "typescript": "^5"
+    "typescript": "5.4"
   },
   "name": "hogehoge-project",
   "private": true,
