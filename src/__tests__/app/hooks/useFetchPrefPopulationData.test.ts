@@ -1,6 +1,6 @@
-import { renderHook, waitFor } from "@testing-library/react";
-import axios from "axios";
-import { act } from "react";
+import { renderHook, waitFor } from '@testing-library/react';
+import axios from 'axios';
+import { act } from 'react';
 
 import useFetchPrefPopulationData from '../../../app/hooks/useFetchPrefPopulationData';
 

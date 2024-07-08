@@ -2,7 +2,7 @@ module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
-    '\\.(css|less|scss|sass)$': 'identity-obj-proxy'
+    '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
   },
   preset: 'ts-jest/presets/js-with-ts-esm',
   roots: ['<rootDir>/src'],
@@ -12,9 +12,9 @@ module.exports = {
     '^.+\\.m?[tj]sx?$': [
       'ts-jest',
       {
-        tsconfig: '<rootDir>/tsconfig.test.json'
-      }
-    ]
+        tsconfig: '<rootDir>/tsconfig.test.json',
+      },
+    ],
   },
-  transformIgnorePatterns: ['node_modules/(?!(firebase|@firebase))']
-}
+  transformIgnorePatterns: ['node_modules/(?!(firebase|@firebase))'],
+};
