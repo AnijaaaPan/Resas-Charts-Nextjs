@@ -1,13 +1,10 @@
-'use client';
-
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import React, { useRef } from 'react';
 
-import styles from '@/app/css/Graph.module.css';
-import { GraphProps } from '@/interfaces/IProps';
+import { GraphProps } from '@/app/interfaces/IProps';
 
-const PopulationGraph: React.FC<GraphProps> = ({ labelIndex, labels, prefPopulationDatas }) => {
+const Chart: React.FC<GraphProps> = ({ labelIndex, labels, prefPopulationDatas }) => {
   const series: Highcharts.SeriesOptionsType[] = prefPopulationDatas.map((p) => ({
     data: p.data[labelIndex].data.map((pd) => pd.value),
     name: p.prefName,
@@ -46,11 +43,7 @@ const PopulationGraph: React.FC<GraphProps> = ({ labelIndex, labels, prefPopulat
 
   const chartComponentRef = useRef<HighchartsReact.RefObject>(null);
 
-  return (
-    <div className={styles.graph}>
-      <HighchartsReact highcharts={Highcharts} options={options} ref={chartComponentRef} />
-    </div>
-  );
+  return <HighchartsReact highcharts={Highcharts} options={options} ref={chartComponentRef} />;
 };
 
-export default PopulationGraph;
+export default Chart;

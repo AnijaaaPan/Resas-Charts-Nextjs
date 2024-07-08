@@ -1,8 +1,8 @@
 'use client';
 
-import PopulationGraph from '@/app/components/PopulationGraph';
-import { PopulationTypeRadioGroup } from '@/app/components/PopulationTypeRadioGroup';
-import { PrefectureCheckBoxGroup } from '@/app/components/PrefectureCheckBoxGroup';
+import PopulationGraph from './components/graph/PopulationGraph';
+import { PopulationTypeRadioGroup } from './components/population/PopulationTypeRadioGroup';
+import { PrefectureCheckBoxGroup } from './components/population/PrefectureCheckBoxGroup';
 import { usePageLogic } from './hooks/usePageLogic';
 
 export default function Home() {

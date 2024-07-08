@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useState } from 'react';
 
-import { PrefPopulationData } from '@/interfaces/IResas';
+import { PrefPopulationData } from '@/app/interfaces/IResas';
 
 export const useFetchPrefPopulation = () => {
   const [prefPopulation, setPrefPopulation] = useState<PrefPopulationData[]>([]);

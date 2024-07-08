@@ -1,6 +1,6 @@
-import { useFetchPrefectures } from '@/app/hooks/useFetchPrefectures';
-import { useFetchPrefPopulation } from '@/app/hooks/useFetchPrefPopulation';
 import { useState } from 'react';
+import { useFetchPrefectures } from './useFetchPrefectures';
+import { useFetchPrefPopulation } from './useFetchPrefPopulation';
 
 const populationLabels = ['総人口', '年少人口', '生産年齢人口', '老年人口'];
 
