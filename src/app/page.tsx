@@ -17,18 +17,25 @@ export default function Home() {
 
   return (
     <main>
+      <header>
+        <h1>
+          <span>都道府県別</span>
+          <span>人口推移グラフ</span>
+        </h1>
+      </header>
+
       <section>
-        <h1>都道府県</h1>
+        <h2>都道府県</h2>
         <PrefectureCheckBoxGroup prefectures={prefectures} onChange={handleCheckBoxPrefectures} />
       </section>
 
       <section>
-        <h1>推移タイプ</h1>
+        <h2>推移タイプ</h2>
         <PopulationTypeRadioGroup labels={populationLabels} onChange={handlePopulationTypeChange} />
       </section>
 
       <section>
-        <h1>グラフ</h1>
+        <h2>グラフ</h2>
         <PopulationGraph
           labels={populationLabels}
           labelIndex={selectedPopulationType}
