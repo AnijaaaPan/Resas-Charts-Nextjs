@@ -2,8 +2,8 @@
 
 import React from 'react';
 
-import { GraphProps } from '@/app/interfaces/IProps';
 import styles from '@/styles/Graph.module.css';
+import { GraphProps } from '@/types/IProps';
 import Chart from './Chart';
 
 const PopulationGraph: React.FC<GraphProps> = ({ labelIndex, labels, prefPopulationDatas }) => (

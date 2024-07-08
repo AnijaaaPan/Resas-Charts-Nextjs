@@ -2,7 +2,7 @@ import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import React, { useRef } from 'react';
 
-import { GraphProps } from '@/app/interfaces/IProps';
+import { GraphProps } from '@/types/IProps';
 
 const Chart: React.FC<GraphProps> = ({ labelIndex, labels, prefPopulationDatas }) => {
   const series: Highcharts.SeriesOptionsType[] = prefPopulationDatas.map((p) => ({

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { CheckBoxInputProps } from '@/app/interfaces/IProps';
 import styles from '@/styles/CheckBox.module.css';
+import { CheckBoxInputProps } from '@/types/IProps';
 
 const CheckBoxInput: React.FC<CheckBoxInputProps> = ({ onChange, prefCode, prefName }) => (
   <div className={styles.checkBox} key={prefName}>

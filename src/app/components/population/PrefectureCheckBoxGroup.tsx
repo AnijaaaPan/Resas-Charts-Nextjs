@@ -1,7 +1,7 @@
 'use client';
 
-import { CheckBoxPrefecturesProps } from '@/app/interfaces/IProps';
 import styles from '@/styles/CheckBox.module.css';
+import { CheckBoxPrefecturesProps } from '@/types/IProps';
 import CheckBoxInput from '../common/CheckBoxInput';
 
 export const PrefectureCheckBoxGroup: React.FC<CheckBoxPrefecturesProps> = ({
