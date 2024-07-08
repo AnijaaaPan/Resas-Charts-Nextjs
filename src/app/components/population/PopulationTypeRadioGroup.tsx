@@ -8,7 +8,7 @@ export const PopulationTypeRadioGroup: React.FC<CheckBoxPrefPopulationProps> = (
   labels,
   onChange,
 }) => (
-  <div className={`${styles.checkBoxs} ${styles.labels}`}>
+  <fieldset className={`${styles.checkBoxs} ${styles.labels}`}>
     {labels.map((label, index) => (
       <RadioInput
         key={label}
@@ -18,5 +18,5 @@ export const PopulationTypeRadioGroup: React.FC<CheckBoxPrefPopulationProps> = (
         defaultChecked={index === 0}
       />
     ))}
-  </div>
+  </fieldset>
 );
