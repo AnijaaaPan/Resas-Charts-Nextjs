@@ -4,7 +4,7 @@ import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import React, { useRef } from 'react';
 
-import styles from '@/css/Graph.module.css';
+import styles from '@/app/css/Graph.module.css';
 import { GraphProps } from '@/interfaces/IProps';
 
 const PopulationGraph: React.FC<GraphProps> = ({ labelIndex, labels, prefPopulationDatas }) => {
