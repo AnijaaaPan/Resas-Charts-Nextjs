@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import { PrefPopulationData } from '@/types/IResas';
 
-export const useFetchPrefPopulation = () => {
+export const useFetchPrefPopulationData = () => {
   const [prefPopulation, setPrefPopulation] = useState<PrefPopulationData[]>([]);
 
   const handleCheckBoxPrefectures = async (

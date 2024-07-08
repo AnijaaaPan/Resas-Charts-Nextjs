@@ -2,7 +2,7 @@
 
 import styles from '@/styles/CheckBox.module.css';
 import { CheckBoxPrefPopulationProps } from '@/types/IProps';
-import RadioInput from '../common/RadioInput';
+import PopulationTypeRadioInput from '../common/PopulationTypeRadioInput';
 
 export const PopulationTypeRadioGroup: React.FC<CheckBoxPrefPopulationProps> = ({
   labels,
@@ -10,7 +10,7 @@ export const PopulationTypeRadioGroup: React.FC<CheckBoxPrefPopulationProps> = (
 }) => (
   <fieldset className={`${styles.checkBoxs} ${styles.labels}`}>
     {labels.map((label, index) => (
-      <RadioInput
+      <PopulationTypeRadioInput
         key={label}
         label={label}
         index={index}

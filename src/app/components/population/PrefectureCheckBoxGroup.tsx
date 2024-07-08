@@ -2,7 +2,7 @@
 
 import styles from '@/styles/CheckBox.module.css';
 import { CheckBoxPrefecturesProps } from '@/types/IProps';
-import CheckBoxInput from '../common/CheckBoxInput';
+import PrefectureCheckBoxInput from '../common/PrefectureCheckBoxInput';
 
 export const PrefectureCheckBoxGroup: React.FC<CheckBoxPrefecturesProps> = ({
   onChange,
@@ -11,7 +11,12 @@ export const PrefectureCheckBoxGroup: React.FC<CheckBoxPrefecturesProps> = ({
   <fieldset className={styles.checkBoxs}>
     {prefectures &&
       prefectures.map(({ prefCode, prefName }) => (
-        <CheckBoxInput key={prefName} prefName={prefName} prefCode={prefCode} onChange={onChange} />
+        <PrefectureCheckBoxInput
+          key={prefName}
+          prefName={prefName}
+          prefCode={prefCode}
+          onChange={onChange}
+        />
       ))}
   </fieldset>
 );

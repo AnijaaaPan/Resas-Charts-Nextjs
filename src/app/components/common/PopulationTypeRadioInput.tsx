@@ -3,7 +3,7 @@ import React from 'react';
 import styles from '@/styles/CheckBox.module.css';
 import { RadioInputProps } from '@/types/IProps';
 
-const RadioInput: React.FC<RadioInputProps> = ({
+const PopulationTypeRadioInput: React.FC<RadioInputProps> = ({
   defaultChecked = false,
   index,
   label,
@@ -21,4 +21,4 @@ const RadioInput: React.FC<RadioInputProps> = ({
   </div>
 );
 
-export default RadioInput;
+export default PopulationTypeRadioInput;
