@@ -1,7 +1,7 @@
 import React from 'react';
 
-import styles from '@/styles/CheckBox.module.css';
-import { CheckBoxInputProps } from '@/types/IProps';
+import styles from '../../../styles/CheckBox.module.css';
+import { CheckBoxInputProps } from '../../../types/IProps';
 
 const PrefectureCheckBoxInput: React.FC<CheckBoxInputProps> = ({
   onChange,

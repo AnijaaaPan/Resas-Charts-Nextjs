@@ -1,9 +1,9 @@
 import axios from 'axios';
 import { useState } from 'react';
 
-import { PrefPopulationData } from '@/types/IResas';
+import { PrefPopulationData } from '../../types/IResas';
 
-export const useFetchPrefPopulationData = () => {
+const useFetchPrefPopulationData = () => {
   const [prefPopulation, setPrefPopulation] = useState<PrefPopulationData[]>([]);
 
   const handleCheckBoxPrefectures = async (
@@ -35,3 +35,5 @@ export const useFetchPrefPopulationData = () => {
 
   return { prefPopulation, handleCheckBoxPrefectures };
 };
+
+export default useFetchPrefPopulationData;

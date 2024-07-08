@@ -2,9 +2,9 @@ import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import React, { useRef } from 'react';
 
-import { GraphProps } from '@/types/IProps';
+import { GraphProps } from '../../../types/IProps';
 
-const Chart: React.FC<GraphProps> = ({ labelIndex, labels, prefPopulationDatas }) => {
+const HighChart: React.FC<GraphProps> = ({ labelIndex, labels, prefPopulationDatas }) => {
   const series: Highcharts.SeriesOptionsType[] = prefPopulationDatas.map((p) => ({
     data: p.data[labelIndex].data.map((pd) => pd.value),
     name: p.prefName,
@@ -15,6 +15,9 @@ const Chart: React.FC<GraphProps> = ({ labelIndex, labels, prefPopulationDatas }
     prefPopulationDatas[0]?.data[labelIndex].data.map((pd) => `${pd.year}年`) || [];
 
   const options: Highcharts.Options = {
+    accessibility: {
+      enabled: false,
+    },
     series:
       series.length === 0
         ? [
@@ -46,4 +49,4 @@ const Chart: React.FC<GraphProps> = ({ labelIndex, labels, prefPopulationDatas }
   return <HighchartsReact highcharts={Highcharts} options={options} ref={chartComponentRef} />;
 };
 
-export default Chart;
+export default HighChart;
