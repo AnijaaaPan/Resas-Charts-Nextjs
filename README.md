@@ -19,6 +19,3 @@
 - [ディレクトリ構成とコンポーネントの説明](https://github.com/AnijaaaPan/Resas-Charts-Nextjs/wiki/%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E6%A7%8B%E6%88%90%E3%81%A8%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%81%AE%E8%AA%AC%E6%98%8E)の生成
 - [タスク一覧](https://github.com/AnijaaaPan/Resas-Charts-Nextjs/issues/2)の生成
 - テストツールやテストケースの実装が難しかったため、`src/__test__`を実装する際に発生したエラーの読み込みと修正案の提示
-
-## ライセンス
-このプロジェクトはMITライセンスのもとで公開されています。詳細は[LICENSE](LICENSE)ファイルを参照してください。
