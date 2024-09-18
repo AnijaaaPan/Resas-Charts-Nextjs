@@ -3,7 +3,7 @@
     "axios": "^1.7.2",
     "highcharts": "^11.4.5",
     "highcharts-react-official": "^3.2.1",
-    "next": "14.2.4",
+    "next": "14.2.10",
     "react": "^18",
     "react-dom": "^18"
   },
